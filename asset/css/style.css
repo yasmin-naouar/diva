@@ -536,9 +536,80 @@ a:link {
     color: #3C372C;
 
   }
-  /* Styles pour les téléphones portables */
-@media screen and (max-width: 768px) {
-    body{
-        width: 95%; /* Largeur plus étroite pour petits écrans */
-        padding: 20px; /* Moins de padding pour adapter la taille */
+  /* Fixe la mise en page de base sur les écrans plus petits (moins de 768px) */
+@media only screen and (max-width: 768px) {
+    
+    /* Ajuste les marges et padding pour les petits écrans */
+    body {
+        padding: 0 10px;
     }
+
+    /* Adapte le header */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 5%; /* Réduit les marges */
+    }
+
+    .header_menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header_menu a {
+        margin-left: 0;
+        margin-bottom: 10px; /* Ajoute de l'espace entre les liens */
+        font-size: 12px; /* Réduit légèrement la taille du texte */
+    }
+
+    /* Ajuste les sections de la home */
+    .home {
+        flex-direction: column;
+        padding: 0 20px; /* Ajuste le padding pour un affichage plus propre */
+        height: auto; /* Permet à la section d'ajuster sa hauteur selon le contenu */
+    }
+
+    .home_left, .home_right {
+        width: 100%; /* Assure que les deux sections prennent toute la largeur */
+        margin: 20px 0;
+    }
+
+    .home_right img {
+        height: auto;
+        width: 100%; /* Empêche l'image de déborder sur les petits écrans */
+    }
+
+    /* Ajuste la grille de produits pour les petits écrans */
+    .best-sales_product {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes au lieu de plusieurs */
+        grid-template-rows: auto; /* Ajuste automatiquement la hauteur des lignes */
+    }
+
+    /* Réduction de la taille des textes pour les sections de vente */
+    .best-sales_product span {
+        font-size: 14px;
+    }
+
+    /* Formulaire plus petit */
+    form {
+        width: 90%;
+        margin: 20px auto; /* Centre le formulaire et ajuste la taille */
+    }
+
+    /* Ajuste les images de la section "about" */
+    .presentation-right img {
+        width: 150px; /* Réduit la taille de l'image circulaire */
+        height: auto;
+    }
+
+    /* Footer adapté */
+    footer {
+        font-size: smaller;
+        padding: 10px 0;
+    }
+
+    /* Ajuste la carte ou d'autres sections larges */
+    .map {
+        height: 250px;
+    }
+}

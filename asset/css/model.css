@@ -1,268 +1,317 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box ;
-    font-family: 'roboto' , sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box ;
+  font-family: 'roboto' , sans-serif;
 
 }
 ::-webkit-scrollbar{
-    width: 8px;
+  width: 8px;
 
 
 }
 ::-webkit-scrollbar-thumb{
-    width: 5px;
-    background-color: #e1d0b7;
-    border-radius: 6px;
+  width: 5px;
+  background-color: #e1d0b7;
+  border-radius: 6px;
 
 }
 body {
-    background-color: #796f59;
+  background-color: #796f59;
 
 }
 a{
-    text-decoration: 0;
-    color:black;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  text-decoration: 0;
+  color:black;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 
 }
 ul{
-    list-style: none;
+  list-style: none;
 }
 header{
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    margin: 0 8%;
-    padding: 20px 0;
-    border-bottom: 1px solid #000;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  margin: 0 8%;
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
 }
 .header_logo{
-     font-weight: 500px;
-     text-decoration: none;
+   font-weight: 500px;
+   text-decoration: none;
 
 
 }
 .header_menu {
-    display:flex;
+  display:flex;
 
 }
 .header_menu a{
-    margin-left: 20PX;
-    padding-bottom: 3px;
-    position:relative;
+  margin-left: 20PX;
+  padding-bottom: 3px;
+  position:relative;
 
 }
 .header_menu a:after {
-    position: absolute;
-    left: 0;
-    bottom:-2px;
-    content: "";
-    height:1px  ;
-    width:0%;
-    background-color:#1b1717;
-    transition:0.5s ease-out;
+  position: absolute;
+  left: 0;
+  bottom:-2px;
+  content: "";
+  height:1px  ;
+  width:0%;
+  background-color:#1b1717;
+  transition:0.5s ease-out;
 }
 .header_menu a:hover:after {
-    width: 80px;
+  width: 80px;
 
 }
 .HAYA a:hover:after{
-    width: 50px;
-    
+  width: 50px;
+  
 }
 
 
 
 .sidebar {
-    width: 250px;
-    background-color: #efe9da;
-    padding: 15px;
-    height: 100vh;
-    margin-top: 50px;
-    margin-left: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
+  width: 250px;
+  background-color: #efe9da;
+  padding: 15px;
+  height: 100vh;
+  margin-top: 50px;
+  margin-left: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
 }
 
 h2 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: #3C372C;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #3C372C;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .categories {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .categories li {
-    padding: 10px 0;
-    border-bottom: 1px solid #ccc;
-    cursor: pointer;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
 }
 
 .categories li:hover {
-    color: #a77337;
+  color: #a77337;
 }
 
 
 .services-card {
-    background-color: #f0eee6;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    margin-right: 20px;
-    text-align: right;
-    position: absolute;
-    right: 0;
-    top: 20px;
-    margin-top: 200px;
-    height: 50vh;
+  background-color: #f0eee6;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin-right: 20px;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  margin-top: 200px;
+  height: 50vh;
 
-    
+  
 }
 
 
 .services-list {
-    list-style-type: none;
-    padding: 0;
-   
+  list-style-type: none;
+  padding: 0;
+ 
 }
 
 .services-list li {
-    padding: 15px 0;
-    font-size: 1.1em;
-    
-    align-items: center;
-    justify-content: flex-end;
-    border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+  font-size: 1.1em;
+  
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 1px solid #ccc;
 }
 
 .services-list li i {
-    margin-left: 10px;
-    font-size: 1.5em;
-    color: #54533b;
+  margin-left: 10px;
+  font-size: 1.5em;
+  color: #54533b;
 }
 
 .services-list li:hover i {
-    color: #d5dde6;
+  color: #d5dde6;
 }
 
 .services-list li:hover {
-    color: #a77337;
+  color: #a77337;
 }
 
+
+/* Footer */
+footer {
+  background-color:#e4d4bb ; /* Couleur de fond claire */
+  color:#6d6251; /* Couleur du texte */
+  padding: 1.5rem 0; /* Espacement interne du footer */
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 100px;
   
-  /* Footer */
-  footer {
-    background-color:#e4d4bb ; /* Couleur de fond claire */
-    color:#6d6251; /* Couleur du texte */
-    padding: 1.5rem 0; /* Espacement interne du footer */
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 100px;
-    
-  }
-  .models{
-    width: 30PX;
-    height: 30px;
-  }
-  
-  .products {
-    display: flex;
-    flex-wrap: wrap;  /* Pour permettre de passer à la ligne */
-    justify-content:center;
-    margin-top: -1050px;
-    padding: 300px;
-  }
-  
-  .product {
-    background-color: rgb(225, 224, 205);
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px;
-    width: 250px;
-    position: relative;
-    transition: transform 0.3s;
-    cursor: pointer;
-    flex: 1 1 calc(33.333% - 40px); /* Chaque produit prend 1/3 de la ligne */
-    box-sizing: border-box;
-  }
-  
-  .product:hover {
-    transform: scale(1.05);
-  }
-  
-  .product img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px 8px 0 0;
-  }
-  
-  h2 {
-    font-size: 1.5em;
-    margin: 15px 0;
-  }
-  
-  .price {
-    font-size: 1.2em;
-    color: #a48754;
-  }
-  
-  
-  
-  .icons {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    gap: 10px;
-  }
-  
-  .icons i {
-    font-size: 1.5em;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  .icons i:hover {
-    background-color: #dfd3a2;
-  }
-  
-  
-  
-  li   a:link { 
-  text-decoration: none; 
-  color: #3C372C;
+}
+.models{
+  width: 30PX;
+  height: 30px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;  /* Pour permettre de passer à la ligne */
+  justify-content:center;
+  margin-top: -1050px;
+  padding: 300px;
+}
+
+.product {
+  background-color: rgb(225, 224, 205);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  width: 250px;
+  position: relative;
+  transition: transform 0.3s;
+  cursor: pointer;
+  flex: 1 1 calc(33.333% - 40px); /* Chaque produit prend 1/3 de la ligne */
+  box-sizing: border-box;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 15px 0;
+}
+
+.price {
+  font-size: 1.2em;
+  color: #a48754;
+}
+
+
+
+.icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.icons i {
+  font-size: 1.5em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icons i:hover {
+  background-color: #dfd3a2;
+}
+
+
+
+li   a:link { 
+text-decoration: none; 
+color: #3C372C;
 } 
 a:visited { 
-  text-decoration: none; 
-  color: #3C372C;
+text-decoration: none; 
+color: #3C372C;
 
 } 
 a:hover { 
-  text-decoration: none; 
-  color: #3C372C !important;
+text-decoration: none; 
+color: #3C372C !important;
 
 
 } 
 a:active { 
-  text-decoration: none; 
-  color: #3C372C;
+text-decoration: none; 
+color: #3C372C;
 
 }
 
-
+/* Ajoute ceci au CSS pour gérer les tailles sur mobile */
+@media (max-width: 768px) {
+    
+  /* Les éléments du header */
+  header {
+      flex-direction: column;
+      margin: 0;
+  }
   
- 
+  /* Le menu du header */
+  .header_menu a {
+      margin-left: 0;
+      margin-bottom: 10px;
+      font-size: 12px; /* Réduction de la taille de la police sur mobile */
+  }
+  
+  /* Sidebar prend toute la largeur du mobile */
+  .sidebar {
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+      padding: 15px;
+      box-shadow: none;
+      border-radius: 15px;
+  }
+  
+  /* Les cartes de services et produits deviennent plus petites et flexibles */
+  .services-card, .product {
+      width: 100%; /* Prendre toute la largeur sur mobile */
+      margin: 10px 0; /* Espacement réduit sur mobile */
+      height: auto; /* Ajuste la hauteur automatiquement */
+  }
+  
+  .products {
+      padding: 10px;
+  }
+  
+  .product img {
+      width: 100%;
+      height: auto;
+  }
+  
+  footer {
+      padding: 10px;
+      font-size: 12px;
+  }
+}
+
+
+
+
+
