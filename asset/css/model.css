@@ -169,6 +169,24 @@ footer {
   width: 100%;
   margin-top: 100px;
   
+  
+  .text-reset{
+    text-decoration: none;
+  }
+  .email{
+    color: #000;
+    text-decoration: none;
+  }
+  .facb{
+    text-decoration: none;
+  }
+  .mapp{
+    text-decoration: none;
+  }
+  .instg{
+    text-decoration: none;
+  }
+
 }
 .models{
   width: 30PX;
@@ -264,52 +282,49 @@ color: #3C372C;
 }
 
 /* Ajoute ceci au CSS pour gérer les tailles sur mobile */
-@media (max-width: 768px) {
-    
-  /* Les éléments du header */
-  header {
-      flex-direction: column;
+/* Media query pour les petits écrans comme les téléphones */
+@media only screen and (max-width: 768px) {
+  /* Ajuster les marges et paddings pour les petits écrans */
+  body {
       margin: 0;
+      padding: 0;
   }
-  
-  /* Le menu du header */
-  .header_menu a {
-      margin-left: 0;
-      margin-bottom: 10px;
-      font-size: 12px; /* Réduction de la taille de la police sur mobile */
-  }
-  
-  /* Sidebar prend toute la largeur du mobile */
+
+  /* Réduire la taille de la barre latérale sur mobile */
   .sidebar {
       width: 100%;
       height: auto;
-      margin-left: 0;
-      padding: 15px;
-      box-shadow: none;
-      border-radius: 15px;
-  }
-  
-  /* Les cartes de services et produits deviennent plus petites et flexibles */
-  .services-card, .product {
-      width: 100%; /* Prendre toute la largeur sur mobile */
-      margin: 10px 0; /* Espacement réduit sur mobile */
-      height: auto; /* Ajuste la hauteur automatiquement */
-  }
-  
-  .products {
+      margin: 0;
       padding: 10px;
+      border-radius: 10px;
   }
-  
-  .product img {
+
+  /* Réduire la taille des cartes de service */
+  .services-card {
       width: 100%;
+      margin: 20px 0;
       height: auto;
   }
-  
+
+  /* Ajuster les produits pour s'afficher en colonne sur mobile */
+  .products {
+      flex-direction: column;
+      padding: 0;
+  }
+
+  .product {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  /* Assurer que le footer s'adapte aussi bien */
   footer {
-      padding: 10px;
-      font-size: 12px;
+      margin-top: 50px;
+      padding: 20px;
   }
 }
+
+
 
 
 
